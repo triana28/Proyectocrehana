@@ -1,0 +1,303 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/*CABECERA*/
+
+header{
+  width: 100%;
+  height: 200px;
+  background-color: #ffffffe3;
+}
+
+.logo{
+  padding: 25px 0;
+}
+
+.logo img{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+justify-content: space-between;
+  max-width: 430px;
+  margin: auto;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #e4980d;
+  font-size: 14px;
+  
+}
+
+.menu a:hover{
+  color:#020202;
+}
+/*FIN DE CABECERA*/
+
+/*BANNER PRINCIPAL*/
+
+.banner{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/cafe.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.banner > div{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 8, 1, 0.308);
+}
+
+.llamada-accion{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.llamada-accion p{
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.llamada-accion h2{
+  font-size: 42px;
+  color: white;
+  width: 100%;
+  padding: 45px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 470px;
+}
+
+
+.llamada-accion a:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+/*FIN DE BANNER PRINCIPAL*/
+/* seccion de promo */
+.promocion{
+  padding-bottom: 80px;
+}
+
+.promocion > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foto-producto{
+  width: 100%;
+  max-width: 570px;
+}
+
+.foto-producto img{
+  width: 100%;
+}
+
+.info{
+  text-align: center;
+  padding: 15px 0px;
+  max-width: 570px;
+}
+
+.info p:nth-child(1){
+  font-size: 14px;
+  color:#3c1c22;
+  padding-bottom: 20px;
+  border-bottom:1px solid #a2a2a2;
+}
+
+.info h3{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #ac7105;
+  font-size: 18px;
+}
+
+.info p:nth-child(3){
+  font-size: 14px;
+  color:#3c1c22;
+  padding-bottom: 25px;
+}
+
+.info p:nth-child(4){
+  font-size: 14px;
+  color:#646464;
+  padding-bottom: 20px;
+}
+
+.info a{
+  font-size: 15px;
+  color: #6ca2f3;
+}
+
+@media all and (min-width:769px){
+  .promocion{
+    padding-top: 80px;
+  }
+  .foto-producto{
+    margin-right: 30px;
+  }
+  .info{
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+
+/* fin de seccion de prmo */
+
+
+
+
+
+
+
+/*SECCION DE SOBRE NOSOTROS*/
+ .nosotros{
+  padding-bottom: 80px;
+}
+
+.nosotros > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.foto-equipo{
+  width: 100%;
+  max-width: 570px;
+}
+
+.foto-equipo img{
+  width: 100%;
+}
+
+.conocenos{
+  text-align: center;
+  padding: 15px 0px;
+  max-width: 570px;
+}
+
+.conocenos p:nth-child(1){
+  font-size: 14px;
+  color:#3c1c22;
+  padding-bottom: 20px;
+  border-bottom:1px solid #a2a2a2;
+}
+
+.conocenos h3{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #ac7105;;
+  font-size: 18px;
+}
+
+.conocenos p:nth-child(3){
+  font-size: 14px;
+  color:#3c1c22;
+  padding-bottom: 25px;
+}
+
+.conocenos p:nth-child(4){
+  font-size: 14px;
+  color:#646464;
+  padding-bottom: 20px;
+}
+
+.conocenos a{
+  font-size: 15px;
+  color: #0e96dd;
+}
+
+@media all and (min-width:769px){
+  .nosotros{
+    padding-top: 80px;
+  }
+  .foto-equipo{
+    margin-right: 30px;
+  }
+  .conocenos{
+    padding-left: 30px;
+    text-align: left;
+  }
+} 
+
+/*FIN DE SECCION DE SOBRE NOSOTROS*/
+
+/*PIE DE PÁGINA*/
+
+.top-footer{
+  background-color:#8a6624;
+  height:25px;
+}
+
+.center-footer{
+  background-color: #472d0a;
+}
+
+.center-footer .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.center-footer .widget{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  color:#ffffff;
+
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.center-footer .widget h4{
+  padding-bottom: 35px;
+  font-size: 18px;
+}
+
+.center-footer .widget p{
+  font-size: 14px;
+}
+
+.bottom-footer{
+  background-color:#251203;
+  height:25px;
+}
+
+.bottom-footer p{
+  color:#7a7a7a;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*FIN DE PIE DE PÁGINA*/
